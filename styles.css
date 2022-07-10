@@ -835,5 +835,19 @@ input::placeholder {
             width: 20rem;
             padding-left: 5rem;
           }
+
+          video {
+            object-fit: contain;
+            width: 428px;
+            height: 20rem;
+          }
+
+          .second-message {
+            padding: 2rem;
+            height: 7rem;
+            font-size: 1.5rem;
+        }
+
+        
 }
 
