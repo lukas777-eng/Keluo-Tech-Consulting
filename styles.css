@@ -848,6 +848,66 @@ input::placeholder {
             font-size: 1.5rem;
         }
 
-        
+        .sale {
+            height: 35rem;
+          }
+          
+          .square-sale {
+            height: 35rem;
+            width: 20rem;
+          }
+          
+          .square-sale-paragraph1 {
+            font-size: 1rem;
+            margin: 2rem;
+            position: relative;
+            bottom: 100px;
+          }
+          .square-sale-paragraph2 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            margin: 2rem;
+            position: relative;
+            bottom: 140px;
+          }
+          
+          .input-sale {
+            width: 13rem;
+            height: 2rem;
+            margin-top: 1rem;
+          }
+          
+          .label-checkbox-sale {
+            width: 13rem;
+            height: 0;
+            margin-top: 0;
+            font-size: 1.5rem;
+          }
+          
+          .input-checkbox-sale {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+          
+          .accept {
+            position: relative;
+            font-size: 0.9rem;
+            padding: 1.5rem;
+            font-weight: 200;
+            width: 10rem;
+            left: 0;
+          }
+          
+          input::placeholder {
+        left: 2rem;
+          }
+          
+          .button-sale {
+            width: 13rem;
+            margin-top: 0;
+          }
+          
+
+
 }
 
