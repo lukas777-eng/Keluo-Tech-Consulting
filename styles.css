@@ -305,6 +305,7 @@ input::placeholder {
 
 .red-color {
     color:#CC2A4D;
+    font-size: 2rem;
 }
 
 .button-coffee {
@@ -937,6 +938,20 @@ input::placeholder {
             border: none;
           }
           
+          .second-message-black {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: rem;
+            height: 3rem;
+            letter-spacing: 2.5px;
+            font-family: 'Avenir';
+            font-size: 1rem;
+            color: white;
+            background-color: black;
+        
+        }
 
 
 }
