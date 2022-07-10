@@ -990,7 +990,93 @@ input::placeholder {
             font-style: italic;
             margin-top: 1rem;
           }
-          
+
+          .third-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background-color: #dcddd3;
+            border-top: 3px solid;
+            border-bottom: 3px solid;
+            font-size: 2rem;
+            font-family: 'Avenir';
+            height: 15rem;
+            font-weight: 100;
+        }
+   
+   .third-message > p {
+     padding-left: 5rem;
+   }
+        
+        .button-contact {
+           background-color: #CC2A4D;
+           color: white;
+           margin: 5px;
+           width: 10rem;
+           height: 5rem;
+           border-radius: 10px;
+           font-size: 1.5rem;
+           border: none;
+           letter-spacing: 2px;
+        
+        }
+   
+   .section-final {
+     display: flex;
+     flex-direction: column;
+     height: 70rem;
+   }
+   
+   .img-final {
+       display: none;
+   }
+   
+   .text-final {
+       display: flex;
+       flex-direction: column;
+       align-items: left;
+       justify-content: center;
+       padding: 5rem;
+       font-size: 1.7rem;
+       font-family: 'Avenir';
+       font-weight: 200;
+   }
+   
+   .queremos {
+       font-family: 'Avenir';
+       font-size: 2rem;
+       font-weight: 100;
+   
+   }
+   
+   @font-face {
+       font-family: 'Rahayu';
+       src: local("Rahayu"),
+       url(./assets/Rahayu.ttf);
+     }
+   
+   .rahayu {
+       font-family: 'rahayu';
+       font-size: 2rem;
+       position: relative;
+       bottom: 2.5rem;
+   }
+   
+   .red-color {
+       color:#CC2A4D;
+       font-size: 2rem;
+   }
+   
+   .button-coffee {
+       width: 17rem;
+       height: 3rem;
+       font-size: 1rem;
+       margin-top: 4rem;
+       border: none;
+       letter-spacing: 0.2rem;
+   }
 
 }
 
