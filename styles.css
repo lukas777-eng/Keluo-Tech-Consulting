@@ -1,17 +1,20 @@
 body{
     margin: 0;
+    z-index: 1;
 }
 
 @font-face {
     font-family: 'Avenir';
     src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
-    font-weight: 800;  
+    font-weight: 800;
 }
 
-/* h1, h2, p {
-    font-weight: 100;
-} */
-  
+a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 0.5rem;
+}
+
 .header {
     background-color: #eae2d8;
     display: grid;
@@ -28,17 +31,12 @@ body{
 }
 
 .header-contact {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-between;
     padding-top: 2rem;
     font-family: 'Poppins', sans-serif;;
     font-weight: 600;
     font-size: 150%;
-    
-}
-.telefono-Header {
-    position: relative;
-    left: -5rem;
 }
 
 .message-welcome {
@@ -51,6 +49,7 @@ body{
     font-family: helvetica;
     font-size: 1.5rem;
     letter-spacing: 5px;
+    z-index: 1;
 }
 
 .welcome-paragraph {
@@ -59,11 +58,34 @@ body{
     letter-spacing: 7px;
 }
 
+.button-fixed {
+    background-color: #CC2A4D;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    opacity: 70%;
+    margin: 1rem;
+}
+
+.fixed {
+    position: fixed;
+    margin-top: 15rem;
+    z-index: 1;
+}
+
+.icon-fixed {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 1;
+}
+
 video {
     object-fit: cover;
     width: 100%;
     height: 70vh;
- 
+    z-index: 1;
 }
 
 .second-message {
@@ -75,7 +97,7 @@ video {
     height: 5rem;
     letter-spacing: 2.5px;
     font-family: 'Avenir';
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-bottom: 3px solid;
 
 
@@ -108,22 +130,31 @@ video {
     letter-spacing: 2.5px;
 }
 
-.a {
+.conqueror {
     margin-left: 10rem;
 }
 
+ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    padding-left: 2rem;
+    background-image: url(./assets/c.png);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    padding-left: 3rem; 
+
+  }
+
 li {    
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 2rem;
     font-family: 'Bogart';
     font-weight: 300;
     font-style: italic;
 }
-
-ul li::marker {
-    content: '🟥';
-    rotate: 90deg;
-  }
 
 .sale {
     background-color: #dcddd3;
@@ -233,30 +264,56 @@ input::placeholder {
 }
 
 .section-final {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 35% 65%;
 }
 
 .img-final {
-    width: 70%;
-    height: 60rem;
+    width: 100%;
+    height: 110vh;
 }
 
 .text-final {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     padding: 20rem;
+    font-size: 1.7rem;
+    font-family: 'Avenir';
+    font-weight: 200;
+}
+
+.queremos {
+    font-family: 'Avenir';
+    font-size: 2rem;
+    font-weight: 100;
+
 }
 @font-face {
-    font-family: 'Semethone';
-    src: local("Semethone"),
-    url(./assets/Semethone.ttf);
+    font-family: 'Rahayu';
+    src: local("Rahayu"),
+    url(./assets/Rahayu.ttf);
   }
 
-.als-script {
-    font-family: 'Semethone';
+.rahayu {
+    font-family: 'rahayu';
+    font-size: 2rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+
+.red-color {
+    color:#CC2A4D;
+}
+
+.button-coffee {
+    width: 17rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin-top: 4rem;
+    border: none;
+    letter-spacing: 0.2rem;
 }
 
 .map-section {
@@ -308,21 +365,24 @@ input::placeholder {
 }
 
 .footer {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 50% 50%;
     height: 3.5rem;
     font-family: 'Avenir';
     font-size: 1.5rem;
-    position: relative;
+    position: relative; */
+    display: flex;
+    justify-content: space-between;
+    height: 13rem;
+    font-family: 'Avenir';
+    font-size: 1.5rem;
 }
 
 .img-footer {
-    position: relative;
-    left: 30rem;
-    top: -10rem;
-    width: 25rem;
-    height: 25rem;
-    object-position: 1rem 10rem;
+    object-fit: cover;
+    object-position: 0rem 0rem;
+    height: 13rem;
+    width: 20rem;
 }
 
 .footer-rrss {
@@ -331,6 +391,7 @@ input::placeholder {
     position: relative;
     top: 5rem;
     bottom: 50rem;
+    left: 2.5rem;
     height: 5rem;
     font-family: 'Avenir';
 
@@ -339,16 +400,109 @@ input::placeholder {
 .seguinos {
     position: relative;
     left: 2.5rem;
+    bottom: 2rem;
 }
 
 .rrss {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 1fr 1fr 1fr;
     position: relative;
-    bottom: 0.5rem;
+    bottom: 2rem;
     font-family: 'Avenir';
+    width: 50rem;
+}
+
+.dt {
+    border-right: 3px solid;
+    border-left: 3px solid;
+    padding-left: 5rem;
+}
+
+.dtW {
+    padding-left: 5rem;
 
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.modal__container {
+    width: 90%;
+    background-color: #fff;
+    margin: auto;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal__title {
+    font-size: 2.5rem;
+}
+
+.modal__paragraph {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: 'Avenir';
+}
+
+.modal_img {
+    width: 2rem;
+    max-width: 100px;
+}
+
+.modal__close {
+    text-decoration: none;
+    color: #fff;
+    background-color: #CC2A4D;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover {
+    color: #CC2A4D;
+    background-color: #fff;
+}
+
+.p-lista {
+    position: relative;
+    left: 5rem;
+    margin-left: 7.5rem;
+}
+
+
+
+
+
+
+
+
+/* queries */
+
+
+
 
 @media (max-width: 950px) {
     body {
@@ -367,18 +521,13 @@ input::placeholder {
     }
 
     .header-contact {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        justify-content: space-between;
         padding-top: 1rem;
         font-family: 'Poppins', sans-serif;;
         font-weight: 600;
         font-size: 300%;
         
-    }
-
-    .telefono-Header {
-        position: relative;
-        left: -10rem;
     }
 
     .message-welcome {
@@ -644,7 +793,6 @@ input::placeholder {
         position: relative;
         bottom: 0.5rem;
         font-family: 'Avenir';
-    
     }
 
     .text-final {
