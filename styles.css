@@ -810,3 +810,15 @@ input::placeholder {
         height: 150vh;
     }
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .header {
+        height: 2rem;
+    }
+
+    .img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
