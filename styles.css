@@ -804,3 +804,9 @@ input::placeholder {
         font-size: 5rem;
     }
 }
+
+@media (max-width: 1920px) {
+    .img-final {
+        height: 150vh;
+    }
+}
