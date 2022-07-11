@@ -832,9 +832,9 @@ input::placeholder {
             padding: 35px;
           }
           
-          .telefono {
-            margin-right: 2rem;
-          }
+          a {
+            padding-right: 1rem;
+        }
 
         .welcome-paragraph {
             position: static;
