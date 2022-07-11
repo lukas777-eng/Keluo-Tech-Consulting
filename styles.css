@@ -800,12 +800,22 @@ input::placeholder {
     }
 }
 
+
+
 @media (max-width: 1920px) {
     .img-final {
         height: 150vh;
     }
-}
+}                  
 
+
+
+
+
+
+
+
+/* 480px */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
         width: 428px;
@@ -1182,3 +1192,7 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+    
+
+}
