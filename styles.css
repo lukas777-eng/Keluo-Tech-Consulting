@@ -366,12 +366,6 @@ input::placeholder {
 }
 
 .footer {
-    /* display: grid;
-    grid-template-columns: 50% 50%;
-    height: 3.5rem;
-    font-family: 'Avenir';
-    font-size: 1.5rem;
-    position: relative; */
     display: flex;
     justify-content: space-between;
     height: 13rem;
@@ -1108,5 +1102,70 @@ input::placeholder {
     width: 99%;
     height: 150rem;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    font-family: "Avenir";
+    font-size: 0.5rem;
+    padding: 2rem;
+  }
+  
+  .img-footer {
+    margin-top: 7rem;
+    margin-right: 2rem;
+    object-fit: cover;
+    object-position: -1rem 0rem;
+    height: 7rem;
+    width: 10rem;
+  }
+  
+  .footer-rrss {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    top: 5rem;
+    bottom: 50rem;
+    height: 5rem;
+    font-family: "Avenir";
+  }
+  
+  .seguinos {
+    position: static;
+    left: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .rrss {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+    bottom: 0.5rem;
+    font-family: "Avenir";
+    font-size: 1rem;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  .dt {
+    border-right: 0;
+    border-left: 0;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .dtW {
+    padding-left: 0;
+    margin-top: 1rem;
+  
+  }
+  
+  
+  footer.footer {
+      height: 100vh;
+  }
 }
 
