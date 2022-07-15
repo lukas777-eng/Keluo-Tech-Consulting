@@ -1,6 +1,7 @@
 body{
     margin: 0;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -459,11 +460,6 @@ input::placeholder {
     font-family: 'Avenir';
 }
 
-.modal_img {
-    width: 2rem;
-    max-width: 100px;
-}
-
 .modal__close {
     text-decoration: none;
     color: #fff;
@@ -501,8 +497,11 @@ input::placeholder {
 
 @media (max-width: 950px) {
     body {
-      width: 99rem;
+        overflow-x: hidden;
     }
+    /* html{
+        overflow-x: hidden;
+      } */
 
     .header{
         height: 10rem;
@@ -1192,7 +1191,846 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 320px) {
     
+    .header {
+        height: 5rem;
+    }
 
+    .img {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        top: -2.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-contact {
+        justify-content: flex-end;
+        padding-top: 1.2rem;
+    }
+
+    .message-welcome {
+        padding: 2rem;
+        font-size: 1rem;
+        height: 7.5rem;
+    }
+
+    .fixed {
+        display: none;
+    }
+
+    video {
+        height: 45vh;
+    }
+
+    .second-message {
+        padding: 3rem;
+        font-size: 1.2rem;
+        height: 0.5rem;
+    }
+
+    .sale {
+        padding: 0;
+        height: 30rem;
+    }
+
+    .square-sale {
+        height: 25rem;
+        width: 15rem;
+    }
+
+    .square-sale-paragraph1 {
+        font-size: 0.7rem;
+        margin: 0;
+        position: static;
+        padding: 0 2rem;
+    }
+
+    .square-sale-paragraph2 {
+        font-size: 0.7rem;
+        margin: 0;
+        position: static;
+        padding: 1rem 2rem;
+    }
+
+    .input-sale {
+        width: 11rem;
+        height: 2rem;
+        margin: 1rem;
+        padding: 0;
+        position: static;
+    }
+
+    .label-checkbox-sale {
+        width: 12rem;
+        position: static;
+        margin-top: 0;
+    }
+
+    .input-checkbox-sale {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .accept {
+        position: static;
+        font-size: 0.7rem;
+        margin-left: 1rem;
+    }
+
+    input::placeholder {
+        position: static;
+        font-size: 1rem;
+    }
+
+    .button-sale {
+        width: 7.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .modal__container {
+        width: 20rem;
+        height: 30rem;
+        padding: 0;
+    }
+
+    .modal__title {
+        font-size: 1rem;
+    }
+
+    .modal__paragraph {
+        font-size: 0.6rem;
+        margin: 0;
+    }
+
+    .modal__close {
+        padding: 0.5em 1em;
+    }
+
+    .second-message-black {
+        height: 1rem;
+        padding: 3rem;
+        font-size: 1rem;
+    }
+
+    .red-color {
+        font-size: 1rem;
+    }
+
+    .message-welcome2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 2.5rem;
+        height: 30rem;
+        font-size: 1rem;
+        position: static;
+        padding: 0 7.5rem;
+        margin: 0;
+    }
+
+    .conqueror {
+        margin-left: 4rem;
+    }
+
+    ul li {
+        padding-left: 0.5rem;
+        background-position: 0 0;
+        background-size: 1rem 1rem;
+        padding-left: 2rem; 
+    
+      }
+    
+    li {    
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .third-message {
+        font-size: 1.5rem;
+        height: 2rem;
+        padding: 5rem;
+    }
+
+    .buttons-red {
+        display: flex;
+    }
+
+    .button-contact {
+        width: 5.5rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+
+    .section-final {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        padding: 2.5rem;
+    }
+
+    .text-final {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .queremos {
+        font-size: 1.5rem;
+    }
+
+    .rahayu {
+        font-size: 1rem;
+        position: static;
+    }
+
+    .red-color {
+        font-size: 1rem;
+    }
+
+    .button-coffee {
+        width: 10rem;
+        height: 2rem;
+        font-size: 0.5rem;
+        margin-top: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .map-section {
+        display: flex;
+        flex-direction: column;
+        height: 34rem;
+    }
+
+    .contactaConNosotros {
+        margin: 2rem 1rem;
+        font-size: 1rem;
+    }
+
+    .img-contacto {
+        display: none;
+    }
+
+    .mapa {
+        width: 20rem;
+        height: 15rem;
+        position: static;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .img-footer {
+        position: static;
+        object-position: 0rem 3rem;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .footer-rrss {
+        position: static;
+        height: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .seguinos {
+        position: static;
+        max-width: fit-content;
+        left: 1rem
+    }
+
+    .rrss {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 10rem;
+        padding: 0;
+    }
+
+    .dt {
+        padding-left: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    .dtW {
+        padding-left: 0;
+    }
+}
+
+@media (max-height: 568px) {
+    
+    video {
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+    .header {
+        height: 5rem;
+    }
+
+    .img {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        top: -2.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-contact {
+        justify-content: flex-end;
+        padding-top: 1.2rem;
+    }
+
+    .message-welcome {
+        padding: 2rem;
+        font-size: 1rem;
+        height: 7.5rem;
+    }
+
+    .fixed {
+        display: none;
+    }
+
+    video {
+        height: 45vh;
+    }
+
+    .second-message {
+        padding: 3rem;
+        font-size: 1.2rem;
+        height: 0.5rem;
+    }
+
+    .sale {
+        padding: 0;
+        height: 30rem;
+    }
+
+    .square-sale {
+        height: 25rem;
+        width: 15rem;
+    }
+
+    .square-sale-paragraph1 {
+        font-size: 0.7rem;
+        margin: 0;
+        position: static;
+        padding: 0 2rem;
+    }
+
+    .square-sale-paragraph2 {
+        font-size: 0.7rem;
+        margin: 0;
+        position: static;
+        padding: 1rem 2rem;
+    }
+
+    .input-sale {
+        width: 11rem;
+        height: 2rem;
+        margin: 1rem;
+        padding: 0;
+        position: static;
+    }
+
+    .label-checkbox-sale {
+        width: 12rem;
+        position: static;
+        margin-top: 0;
+    }
+
+    .input-checkbox-sale {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .accept {
+        position: static;
+        font-size: 0.7rem;
+        margin-left: 1rem;
+    }
+
+    input::placeholder {
+        position: static;
+        font-size: 1rem;
+    }
+
+    .button-sale {
+        width: 7.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .modal__container {
+        width: 20rem;
+        height: 30rem;
+        padding: 0;
+    }
+
+    .modal__title {
+        font-size: 1rem;
+    }
+
+    .modal__paragraph {
+        font-size: 0.6rem;
+        margin: 0;
+    }
+
+    .modal__close {
+        padding: 0.5em 1em;
+    }
+
+    .second-message-black {
+        height: 1rem;
+        padding: 3rem;
+        font-size: 1rem;
+    }
+
+    .red-color {
+        font-size: 1rem;
+    }
+
+    .message-welcome2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 2.5rem;
+        height: 30rem;
+        font-size: 1rem;
+        position: static;
+        padding: 0 7.5rem;
+        margin: 0;
+    }
+
+    .conqueror {
+        margin-left: 4rem;
+    }
+
+    ul li {
+        padding-left: 0.5rem;
+        background-position: 0 0;
+        background-size: 1rem 1rem;
+        padding-left: 2rem; 
+    
+      }
+    
+    li {    
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .third-message {
+        font-size: 1.5rem;
+        height: 2rem;
+        padding: 5rem;
+    }
+
+    .queremos-conocerte {
+        padding-left: 2rem;
+    }
+
+    .buttons-red {
+        display: flex;
+    }
+
+    .button-contact {
+        width: 5.5rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+
+    .section-final {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        padding: 2.5rem;
+    }
+
+    .text-final {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .queremos {
+        font-size: 1.5rem;
+    }
+
+    .rahayu {
+        font-size: 1rem;
+        position: static;
+    }
+
+    .red-color {
+        font-size: 1rem;
+    }
+
+    .button-coffee {
+        width: 10rem;
+        height: 2rem;
+        font-size: 0.5rem;
+        margin-top: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .map-section {
+        display: flex;
+        flex-direction: column;
+        height: 34rem;
+    }
+
+    .contactaConNosotros {
+        margin: 2rem 1rem;
+        font-size: 1rem;
+    }
+
+    .img-contacto {
+        display: none;
+    }
+
+    .mapa {
+        width: 20rem;
+        height: 15rem;
+        position: static;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .img-footer {
+        position: static;
+        object-position: 0rem 3rem;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .footer-rrss {
+        position: static;
+        height: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .seguinos {
+        position: static;
+        max-width: fit-content;
+        left: 1rem
+    }
+
+    .rrss {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 10rem;
+        padding: 0;
+    }
+
+    .dt {
+        padding-left: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    .dtW {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width:376px) {
+    .header {
+        height: 5rem;
+    }
+
+    .img {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        top: -2.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-contact {
+        justify-content: flex-end;
+        padding-top: 1.2rem;
+    }
+
+    .message-welcome {
+        padding: 2rem;
+        font-size: 1rem;
+        height: 7.5rem;
+    }
+
+    .fixed {
+        display: none;
+    }
+
+    video {
+        height: 45vh;
+    }
+
+    .second-message {
+        padding: 3rem;
+        font-size: 1.2rem;
+        height: 0.5rem;
+    }
+
+    .sale {
+        padding: 0;
+        height: 30rem;
+    }
+
+    .square-sale {
+        height: 25rem;
+        width: 15rem;
+    }
+
+    .square-sale-paragraph1 {
+        font-size: 0.7rem;
+        margin: 0;
+        position: static;
+        padding: 0 2rem;
+    }
+
+    .square-sale-paragraph2 {
+        font-size: 0.7rem;
+        margin: 0;
+        position: static;
+        padding: 1rem 2rem;
+    }
+
+    .input-sale {
+        width: 11rem;
+        height: 2rem;
+        margin: 1rem;
+        padding: 0;
+        position: static;
+    }
+
+    .label-checkbox-sale {
+        width: 12rem;
+        position: static;
+        margin-top: 0;
+    }
+
+    .input-checkbox-sale {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .accept {
+        position: static;
+        font-size: 0.7rem;
+        margin-left: 1rem;
+    }
+
+    input::placeholder {
+        position: static;
+        font-size: 1rem;
+    }
+
+    .button-sale {
+        width: 7.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .modal__container {
+        width: 20rem;
+        height: 30rem;
+        padding: 0;
+    }
+
+    .modal__title {
+        font-size: 1rem;
+    }
+
+    .modal__paragraph {
+        font-size: 0.6rem;
+        margin: 0;
+    }
+
+    .modal__close {
+        padding: 0.5em 1em;
+    }
+
+    .second-message-black {
+        height: 1rem;
+        padding: 3rem;
+        font-size: 1rem;
+    }
+
+    .red-color {
+        font-size: 1rem;
+    }
+
+    .message-welcome2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 2.5rem;
+        height: 30rem;
+        font-size: 1rem;
+        position: static;
+        padding: 0 7.5rem;
+        margin: 0;
+    }
+
+    .conqueror {
+        margin-left: 4rem;
+    }
+
+    ul li {
+        padding-left: 0.5rem;
+        background-position: 0 0;
+        background-size: 1rem 1rem;
+        padding-left: 2rem; 
+    
+      }
+    
+    li {    
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .third-message {
+        font-size: 1.5rem;
+        height: 2rem;
+        padding: 5rem;
+    }
+
+    .queremos-conocerte {
+        padding-left: 3rem;
+    }
+
+    .buttons-red {
+        display: flex;
+    }
+
+    .button-contact {
+        width: 5.5rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+
+    .section-final {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        padding: 2.5rem;
+    }
+
+    .text-final {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .queremos {
+        font-size: 1.5rem;
+    }
+
+    .rahayu {
+        font-size: 1rem;
+        position: static;
+    }
+
+    .red-color {
+        font-size: 1rem;
+    }
+
+    .button-coffee {
+        width: 10rem;
+        height: 2rem;
+        font-size: 0.5rem;
+        margin-top: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .map-section {
+        display: flex;
+        flex-direction: column;
+        height: 34rem;
+    }
+
+    .contactaConNosotros {
+        margin: 2rem 1rem;
+        font-size: 1rem;
+    }
+
+    .img-contacto {
+        display: none;
+    }
+
+    .mapa {
+        width: 20rem;
+        height: 15rem;
+        position: static;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .img-footer {
+        position: static;
+        object-position: 1rem 1rem;
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .footer-rrss {
+        position: static;
+        height: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .seguinos {
+        position: static;
+        max-width: fit-content;
+        left: 1rem
+    }
+
+    .rrss {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 10rem;
+        padding: 0;
+    }
+
+    .dt {
+        padding-left: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    .dtW {
+        padding-left: 0;
+    }
 }
