@@ -814,10 +814,11 @@ input::placeholder {
 
 
 
-/* 480px */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    body {
-        width: 428px;
+/* 321px */
+@media only screen and (min-device-width : 321px) and (max-device-width : 480px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
         }
         .header {
             background-color: #eae2d8;
@@ -1192,6 +1193,10 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
     
     .header {
         height: 5rem;
@@ -1206,7 +1211,7 @@ footer {
 
     a {
         font-size: 1rem;
-        margin-right: 0.5rem;
+        padding-right: 1rem;
     }
 
     .header-contact {
@@ -1216,8 +1221,14 @@ footer {
 
     .message-welcome {
         padding: 2rem;
-        font-size: 1rem;
+        font-size: 0.7rem;
         height: 7.5rem;
+    }
+
+    .welcome-paragraph {
+        position: static;
+        letter-spacing: 4px;
+        padding: 0;
     }
 
     .fixed {
@@ -1474,10 +1485,16 @@ footer {
         height: 55vh;
     }
 }
-
+/* 375px */
 @media only screen and (max-width: 375px) and (min-width: 321px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
     .header {
         height: 5rem;
+        grid-template-columns: 60% 20% 20%;
     }
 
     .img {
@@ -1489,18 +1506,27 @@ footer {
 
     a {
         font-size: 1rem;
-        margin-right: 0.5rem;
+        margin-right: 0;
     }
 
     .header-contact {
         justify-content: flex-end;
-        padding-top: 1.2rem;
+        padding: 1.5rem;
+        margin-left: 7rem;
+
     }
 
     .message-welcome {
         padding: 2rem;
-        font-size: 1rem;
-        height: 7.5rem;
+        font-size: 0.8rem;
+        height: 5rem;
+        letter-spacing: 3px;
+    }
+
+    .welcome-paragraph {
+        position: static;
+        padding-left: 0;
+        letter-spacing: 3px;
     }
 
     .fixed {
@@ -1544,7 +1570,7 @@ footer {
     .input-sale {
         width: 11rem;
         height: 2rem;
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 0;
         position: static;
     }
@@ -1556,14 +1582,18 @@ footer {
     }
 
     .input-checkbox-sale {
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
+        margin: 3rem 1rem 0 0;
     }
 
     .accept {
         position: static;
         font-size: 0.7rem;
-        margin-left: 1rem;
+        margin: 0;
+        padding: 0;
+        width: 10rem;
+        margin-top: 3rem;
     }
 
     input::placeholder {
@@ -1575,7 +1605,7 @@ footer {
         width: 7.5rem;
         height: 2.5rem;
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 
     .modal__container {
@@ -1611,29 +1641,36 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 2.5rem;
+        width: 0;
         height: 30rem;
         font-size: 1rem;
         position: static;
-        padding: 0 7.5rem;
-        margin: 0;
+        padding: 0 0;
+        margin: 0 10rem;
     }
 
     .conqueror {
-        margin-left: 4rem;
+        margin-left: 10rem;
+        font-size: 1rem;
+        width: 20rem;
+    }
+
+    .lista {
+        padding: 0 2rem;
+        margin-left: 5rem;
     }
 
     ul li {
-        padding-left: 0.5rem;
-        background-position: 0 0;
+        background-position: 0 10px;
         background-size: 1rem 1rem;
-        padding-left: 2rem; 
+        padding: 1rem 2rem; 
     
       }
     
     li {    
-        font-size: 1rem;
-        margin: 0.5rem;
+        font-size: 0.8rem;
+        margin: 1rem;
+        width: 15rem;
     }
 
     .third-message {
@@ -1643,7 +1680,7 @@ footer {
     }
 
     .queremos-conocerte {
-        padding-left: 2rem;
+        padding-right: 5rem;
     }
 
     .buttons-red {
@@ -1670,6 +1707,7 @@ footer {
 
     .queremos {
         font-size: 1.5rem;
+        padding-left: 2.5rem;
     }
 
     .rahayu {
@@ -1705,8 +1743,8 @@ footer {
     }
 
     .mapa {
-        width: 20rem;
-        height: 15rem;
+        width: 100%;
+        height: 20rem;
         position: static;
     }
 
@@ -1715,13 +1753,16 @@ footer {
         grid-template-columns: 50% 50%;
         height: 2.5rem;
         font-size: 1rem;
+        padding: 0;
     }
 
     .img-footer {
         position: static;
-        object-position: 0rem 3rem;
-        height: 10rem;
-        width: 10rem;
+        object-position: 0rem 2rem;
+        height: 7.5rem;
+        width: 7.5rem;
+        margin-top: 2.5rem;
+        margin-left: 2rem;
     }
 
     .footer-rrss {
@@ -1733,14 +1774,16 @@ footer {
     .seguinos {
         position: static;
         max-width: fit-content;
-        left: 1rem
+        left: 1rem;
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
     }
 
     .rrss {
         display: flex;
         flex-direction: column;
         position: static;
-        width: 10rem;
+        width: 5rem;
         padding: 0;
     }
 
@@ -1754,8 +1797,14 @@ footer {
         padding-left: 0;
     }
 }
-
+/* 414px */
 @media only screen and (max-width: 414px) and (min-width:376px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+
+    }
+
     .header {
         height: 5rem;
     }
@@ -1778,9 +1827,16 @@ footer {
     }
 
     .message-welcome {
-        padding: 2rem;
+        padding: 2rem 1rem 2rem 3rem;
         font-size: 1rem;
         height: 7.5rem;
+    }
+
+    .welcome-paragraph {
+        position: static;
+        padding-left: 0;
+        padding-right: 2rem;
+        letter-spacing: 3px;
     }
 
     .fixed {
@@ -1788,13 +1844,13 @@ footer {
     }
 
     video {
-        height: 45vh;
+        height: 40vh;
     }
 
     .second-message {
         padding: 3rem;
         font-size: 1.2rem;
-        height: 0.5rem;
+        height: 0.1rem;
     }
 
     .sale {
@@ -1824,7 +1880,7 @@ footer {
     .input-sale {
         width: 11rem;
         height: 2rem;
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 0;
         position: static;
     }
@@ -1836,14 +1892,18 @@ footer {
     }
 
     .input-checkbox-sale {
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
+        margin: 3rem 1rem 0 0;
     }
 
     .accept {
         position: static;
         font-size: 0.7rem;
-        margin-left: 1rem;
+        margin: 0;
+        padding: 0;
+        width: 10rem;
+        margin-top: 3rem;
     }
 
     input::placeholder {
@@ -1855,7 +1915,7 @@ footer {
         width: 7.5rem;
         height: 2.5rem;
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 
     .modal__container {
@@ -1891,29 +1951,36 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 2.5rem;
+        width: 0;
         height: 30rem;
         font-size: 1rem;
         position: static;
-        padding: 0 7.5rem;
-        margin: 0;
+        padding: 0 0;
+        margin: 0 10rem;
     }
 
     .conqueror {
-        margin-left: 4rem;
+        margin-left: 10rem;
+        font-size: 1rem;
+        width: 20rem;   
+     }
+
+     .lista {
+        padding: 0 2rem;
+        margin-left: 7.5rem;
     }
 
     ul li {
-        padding-left: 0.5rem;
-        background-position: 0 0;
+        background-position: 0 10px;
         background-size: 1rem 1rem;
-        padding-left: 2rem; 
+        padding: 1rem 2rem; 
     
       }
     
     li {    
-        font-size: 1rem;
-        margin: 0.5rem;
+        font-size: 0.8rem;
+        margin: 1rem;
+        width: 15rem;
     }
 
     .third-message {
@@ -1923,7 +1990,7 @@ footer {
     }
 
     .queremos-conocerte {
-        padding-left: 3rem;
+        padding-right: 5rem;
     }
 
     .buttons-red {
@@ -1939,7 +2006,7 @@ footer {
     .section-final {
         display: flex;
         flex-direction: column;
-        height: 30rem;
+        height: 25rem;
         padding: 2.5rem;
     }
 
@@ -1985,8 +2052,8 @@ footer {
     }
 
     .mapa {
-        width: 20rem;
-        height: 15rem;
+        width: 100%;
+        height: 20rem;
         position: static;
     }
 
@@ -1995,13 +2062,16 @@ footer {
         grid-template-columns: 50% 50%;
         height: 2.5rem;
         font-size: 1rem;
+        padding: 0;
     }
 
     .img-footer {
         position: static;
-        object-position: 1rem 1rem;
-        height: 10rem;
-        width: 12rem;
+        object-position: 0rem 2rem;
+        height: 7.5rem;
+        width: 7.5rem;
+        margin-top: 2.5rem;
+        margin-left: 2rem;
     }
 
     .footer-rrss {
@@ -2013,14 +2083,16 @@ footer {
     .seguinos {
         position: static;
         max-width: fit-content;
-        left: 1rem
+        left: 1rem;
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
     }
 
     .rrss {
         display: flex;
         flex-direction: column;
         position: static;
-        width: 10rem;
+        width: 5rem;
         padding: 0;
     }
 
