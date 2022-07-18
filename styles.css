@@ -807,7 +807,7 @@ input::placeholder {
 }
 
 /* 321px */
-@media only screen and (min-device-width : 321px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 321px) and (max-device-width : 374px) {
     html, body {
         overflow-x: hidden;
         max-width: 100%;
@@ -841,14 +841,14 @@ input::placeholder {
         .welcome-paragraph {
             position: static;
             letter-spacing: 7px;
-            width: 20rem;
-            padding-left: 5rem;
+            width: 14rem;
+            padding-left: 2rem;
           }
 
           video {
             object-fit: contain;
-            width: 428px;
-            height: 20rem;
+            width: 20rem;
+            height: 25rem;
           }
 
           .second-message {
@@ -974,7 +974,7 @@ input::placeholder {
           }
           
           .conqueror {
-            margin-left: 0;
+            margin-right: 3rem;
             font-size: 2rem;
           }
           
@@ -1203,7 +1203,7 @@ footer {
 
     a {
         font-size: 1rem;
-        padding-right: 1rem;
+        padding-right: 0.5rem;
     }
 
     .header-contact {
@@ -1278,12 +1278,13 @@ footer {
     .input-checkbox-sale {
         width: 2rem;
         height: 2rem;
+        margin: 0 0 0 0.5rem;
     }
 
     .accept {
         position: static;
         font-size: 0.7rem;
-        margin-left: 1rem;
+        margin: 0 0 0 1rem;
     }
 
     input::placeholder {
@@ -1340,7 +1341,7 @@ footer {
     }
 
     .conqueror {
-        margin-left: 4rem;
+        margin-left: 8rem;
     }
 
     ul li {
@@ -1428,16 +1429,17 @@ footer {
 
     .footer {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 70%;
         height: 2.5rem;
         font-size: 1rem;
     }
 
     .img-footer {
         position: static;
-        object-position: 0rem 3rem;
-        height: 10rem;
+        object-position: 0rem 1rem;
+        height: 7rem;
         width: 10rem;
+        margin: 0 0 0 5rem;
     }
 
     .footer-rrss {
@@ -1472,7 +1474,7 @@ footer {
 }
 
 /* 375px */
-@media only screen and (max-width: 375px) and (min-width: 321px) {
+@media only screen and (min-width: 375px) and (max-width: 413px) {
     html, body {
         overflow-x: hidden;
         max-width: 100%;
@@ -1492,7 +1494,7 @@ footer {
 
     a {
         font-size: 1rem;
-        margin-right: 0;
+        margin-right: 1rem;
     }
 
     .header-contact {
@@ -1666,7 +1668,8 @@ footer {
     }
 
     .queremos-conocerte {
-        padding-right: 5rem;
+        padding-right: 0;
+        padding-left: 2rem;
     }
 
     .buttons-red {
@@ -1784,7 +1787,7 @@ footer {
     }
 }
 /* 414px */
-@media only screen and (max-width: 414px) and (min-width:376px) {
+@media only screen and (min-width: 414px) and (max-width:600px) {
     html, body {
         overflow-x: hidden;
         max-width: 100%;
@@ -1976,7 +1979,7 @@ footer {
     }
 
     .queremos-conocerte {
-        padding-right: 5rem;
+        padding: 0 0 0 3rem;
     }
 
     .buttons-red {
