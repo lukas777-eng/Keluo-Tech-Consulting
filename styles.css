@@ -320,6 +320,7 @@ input::placeholder {
     margin-top: 4rem;
     border: none;
     letter-spacing: 0.2rem;
+    background-color: #dcddd3;
 }
 
 .map-section {
