@@ -62,96 +62,10 @@ a:link{
     color: black;
   }
 
-  @media (hover:none) {
-    .gif {
-        width: 15rem;
-        height: 13rem;
-        position: static;
-        object-position: 0rem 4.5rem;
-    }
-
-    .enter_site {
-        font-family: 'Avenir';
-        font-size: 0.7rem;
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-        position: relative;
-        left: 5rem;
-    
-    }
-    .enter_site:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.6s ease-out;
-    }
-    
-    .enter_site:hover:after {
-        color: black;
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
-    a:link{
-        text-decoration: none!important;
-        cursor: pointer;
-        color: black;
-      }
-  }
-  @media (hover:hover) {
-    .gif {
-        width: 15rem;
-        height: 13rem;
-        position: static;
-        object-position: 0rem 4.5rem;
-    }
-
-    .enter_site {
-        font-family: 'Avenir';
-        font-size: 0.7rem;
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-        position: relative;
-        left: 5rem;
-    
-    }
-    .enter_site:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.6s ease-out;
-    }
-    
-    .enter_site:hover:after {
-        color: black;
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
-    a:link{
-        text-decoration: none!important;
-        cursor: pointer;
-        color: black;
-      }
-  }
   @media only screen and (max-width: 320px) {
 
     html, body {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         max-width: 100%;
     }
     .gif {
@@ -171,42 +85,18 @@ a:link{
         left: 5rem;
     
     }
-    .enter_site:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.6s ease-out;
-    }
-    
-    .enter_site:hover:after {
-        color: black;
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
-    a:link{
-        text-decoration: none!important;
-        cursor: pointer;
-        color: black;
-      }
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 374px) {
     html, body {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         max-width: 100%;
     }
     .gif {
-        width: 15rem;
-        height: 13rem;
+        width: 20rem;
+        height: 20rem;
         position: static;
-        object-position: 0rem 4.5rem;
+        object-position: 0rem 6rem;
     }
 
     .enter_site {
@@ -216,43 +106,129 @@ a:link{
         color: black;
         display: inline-block;
         position: relative;
-        left: 5rem;
+        left: 7.5rem;
     
     }
-    .enter_site:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.6s ease-out;
-    }
-    
-    .enter_site:hover:after {
-        color: black;
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
-    a:link{
-        text-decoration: none!important;
-        cursor: pointer;
-        color: black;
-      }
   }
 
   @media only screen and (min-width: 375px) and (max-width: 413px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .gif {
+        width: 20rem;
+        height: 20rem;
+        position: static;
+        object-position: 0rem 6rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 7.5rem;
+    
+    }
   }
 
+  @media only screen and (width: 375px) and (height: 812px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .gif {
+        width: 30rem;
+        height: 30rem;
+        position: static;
+        object-position: 0rem 10rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 12rem;
+    
+    }
+  }
+
+
+
   @media only screen and (min-width: 414px) and (max-width:480px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .gif {
+        width: 25rem;
+        height: 25rem;
+        position: static;
+        object-position: 0rem 6rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 9rem;
+    
+    }
   }
   
   @media only screen and (min-width: 480px) and (max-width:550px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .gif {
+        width: 20rem;
+        height: 20rem;
+        position: static;
+        object-position: 0rem 6rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 7.5rem;
+    
+    }
   }
 
   @media (min-width: 550px) and (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .gif {
+        width: 20rem;
+        height: 20rem;
+        position: static;
+        object-position: 0rem 6rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 7.5rem;
+    
+    }
   }
