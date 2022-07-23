@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+}
+
+.gif {
+    width: 50rem;
+    height: 40rem;
+    position: static;
+    object-position: 0rem 15rem;
+}
+
+.cover {
+    background-color: #eae2d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+    font-weight: 800;
+}
+
+.enter_site {
+    font-family: 'Avenir';
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    left: 22rem;
+
+}
+
+.enter_site:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.enter_site:hover:after {
+    color: black;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:link{
+    text-decoration: none!important;
+    cursor: pointer;
+    color: black;
+  }
+
+  @media (hover:none) {
+    .gif {
+        width: 15rem;
+        height: 13rem;
+        position: static;
+        object-position: 0rem 4.5rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+    
+    }
+    .enter_site:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+    }
+    
+    .enter_site:hover:after {
+        color: black;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    a:link{
+        text-decoration: none!important;
+        cursor: pointer;
+        color: black;
+      }
+  }
+  @media (hover:hover) {
+    .gif {
+        width: 15rem;
+        height: 13rem;
+        position: static;
+        object-position: 0rem 4.5rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+    
+    }
+    .enter_site:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+    }
+    
+    .enter_site:hover:after {
+        color: black;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    a:link{
+        text-decoration: none!important;
+        cursor: pointer;
+        color: black;
+      }
+  }
+  @media only screen and (max-width: 320px) {
+
+    html, body {
+        /* overflow-x: hidden; */
+        max-width: 100%;
+    }
+    .gif {
+        width: 15rem;
+        height: 13rem;
+        position: static;
+        object-position: 0rem 4.5rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+    
+    }
+    .enter_site:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+    }
+    
+    .enter_site:hover:after {
+        color: black;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    a:link{
+        text-decoration: none!important;
+        cursor: pointer;
+        color: black;
+      }
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 374px) {
+    html, body {
+        /* overflow-x: hidden; */
+        max-width: 100%;
+    }
+    .gif {
+        width: 15rem;
+        height: 13rem;
+        position: static;
+        object-position: 0rem 4.5rem;
+    }
+
+    .enter_site {
+        font-family: 'Avenir';
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+    
+    }
+    .enter_site:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+    }
+    
+    .enter_site:hover:after {
+        color: black;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    a:link{
+        text-decoration: none!important;
+        cursor: pointer;
+        color: black;
+      }
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 413px) {
+  }
+
+  @media only screen and (min-width: 414px) and (max-width:480px) {
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width:550px) {
+  }
+
+  @media (min-width: 550px) and (max-width: 800px) {
+  }
